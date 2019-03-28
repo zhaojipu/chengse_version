@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/er_bg2">
+
+    <LinearLayout
+        android:id="@+id/er_top_view"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/er_corners_2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_20"
+            android:textColor="@color/white"
+            android:text="您的邀请码:"/>
+
+        <TextView
+            android:id="@+id/er_code"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/main_theme_color"
+            tools:text="TYKRVT"/>
+        <RelativeLayout
+            android:id="@+id/copy_ma_btn"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/er_copy_corners"
+            android:layout_width="70dp"
+            android:layout_height="30dp">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/white"
+                android:text="复制"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/white"
+            android:text="邀请好友填写邀请码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/er_top_view"
+        android:id="@+id/er_back_view"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/er_corners_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_er"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/white"
+            android:text="扫描上面二维码，下载APP"/>
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/save_er_btn"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/er_copy_corners"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_16"
+                    android:text="保存二维码"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/copy_er_btn"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/er_copy_corners"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_16"
+                    android:text="复制链接"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
